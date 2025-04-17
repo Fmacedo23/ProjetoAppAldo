@@ -11,14 +11,14 @@
     <h1>Navegador Simples</h1>
     <div class="form">
       <input type="text" id="urlInput" placeholder="Digite a URL (ex: https://www.google.com)">
-      <button onclick="carregarSite()">Ir</button>
+      <button id="btnIr">Ir</button>
     </div>
     <div class="navegador-frame">
-      <iframe id="navegadorIframe" src=""></iframe>
+      <iframe id="navegadorIframe" src="" width="100%" height="500px"></iframe>
     </div>
     <button class="btn-voltar" onclick="window.location.href='index.html'">⬅ Voltar</button>
   </div>
 
-  <script src="navegador.js"></script>
+  <script src="js/navegador.js"></script>
 </body>
 </html>
