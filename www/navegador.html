@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Navegador</title>
+  <link rel="stylesheet" href="css/navegador.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Navegador Simples</h1>
+    <div class="form">
+      <input type="text" id="urlInput" placeholder="Digite a URL (ex: https://www.google.com)">
+      <button onclick="carregarSite()">Ir</button>
+    </div>
+    <div class="navegador-frame">
+      <iframe id="navegadorIframe" src=""></iframe>
+    </div>
+    <button class="btn-voltar" onclick="window.location.href='index.html'">⬅ Voltar</button>
+  </div>
+
+  <script src="navegador.js"></script>
+</body>
+</html>
