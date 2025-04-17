@@ -1,25 +1,30 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, width=device-width">
   <title>Gerenciador de Tarefas</title>
-  <link rel="stylesheet" href="css/tarefas.css" />
+  <link rel="stylesheet" href="css/tarefas.css">
 </head>
 <body>
   <div class="container">
-    <h1>📝 Gerenciador de Tarefas</h1>
-    <p class="subtitle">Organize suas tarefas com facilidade</p>
+    <h1>Cadastro de Tarefas</h1>
+    <div class="subtitle">Gerencie suas tarefas de forma simples e rápida</div>
 
+    <!-- Botão de Voltar -->
+    <button class="btn-voltar" onclick="voltar()">Voltar para o Menu</button>
+
+    <!-- Formulário de Tarefa -->
     <div class="form">
-      <input id="titulo" placeholder="Título da Tarefa" />
-      <textarea id="descricao" placeholder="Descrição da Tarefa"></textarea>
-      <button class="btn-salvar" onclick="salvarTarefa()">💾 Salvar</button>
+      <input id="titulo" placeholder="Título da Tarefa" type="text">
+      <textarea id="descricao" placeholder="Descrição"></textarea>
+      <button class="btn-salvar" onclick="salvarTarefa()">Salvar</button>
     </div>
 
-    <h2 class="secao-tarefas">📋 Tarefas Salvas</h2>
+    <!-- Lista de Tarefas -->
+    <div class="secao-tarefas">Tarefas Salvas</div>
     <div class="tabela-wrapper">
-      <table>
+      <table border="1">
         <thead>
           <tr>
             <th>Título</th>

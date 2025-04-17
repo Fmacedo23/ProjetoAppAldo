@@ -135,3 +135,8 @@ function resetarFormulario() {
   document.getElementById('titulo').value = '';
   document.getElementById('descricao').value = '';
 }
+
+function voltar() {
+    window.location.href = "index.html";  // Redireciona para o menu principal
+  }
+  
