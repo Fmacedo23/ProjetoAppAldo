@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <title>Gerenciador de Tarefas</title>
+  <link rel="stylesheet" href="css/tarefas.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📝 Gerenciador de Tarefas</h1>
+    <p class="subtitle">Organize suas tarefas com facilidade</p>
+
+    <div class="form">
+      <input id="titulo" placeholder="Título da Tarefa" />
+      <textarea id="descricao" placeholder="Descrição da Tarefa"></textarea>
+      <button class="btn-salvar" onclick="salvarTarefa()">💾 Salvar</button>
+    </div>
+
+    <h2 class="secao-tarefas">📋 Tarefas Salvas</h2>
+    <div class="tabela-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Título</th>
+            <th>Descrição</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="listaTarefas"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="cordova.js"></script>
+  <script src="js/tarefas.js"></script>
+</body>
+</html>
