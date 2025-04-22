@@ -1,3 +1,5 @@
+// 
+
 let db;
 let editandoId = null;
 const isSqlite = !!window.sqlitePlugin;
@@ -14,15 +16,18 @@ function lsSalvar(t) {
   localStorage.setItem(LS_KEY, JSON.stringify(arr));
   return arr.length - 1;
 }
+
 function lsListar() {
   return JSON.parse(localStorage.getItem(LS_KEY) || '[]');
 }
+
 function lsExcluir(id) {
   const arr = lsListar();
   arr.splice(id, 1);
   localStorage.setItem(LS_KEY, JSON.stringify(arr));
 }
 
+// Android/iOS: aguarda o evento deviceready antes de inicializar o banco de dados
 document.addEventListener('deviceready', initDB);
 if (!isSqlite) window.addEventListener('load', initDB); // fallback no browser
 
