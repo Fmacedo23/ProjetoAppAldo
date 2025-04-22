@@ -15,7 +15,7 @@
   "devDependencies": {
     "cordova-android": "^14.0.0",
     "cordova-browser": "^7.0.0",
-    "cordova-plugin-googlemaps": "^2.7.1",
+    "cordova-plugin-geolocation": "^5.0.0",
     "cordova-plugin-inappbrowser": "^6.0.0",
     "cordova-sqlite-storage": "^7.0.0"
   },
@@ -27,9 +27,8 @@
     "plugins": {
       "cordova-sqlite-storage": {},
       "cordova-plugin-inappbrowser": {},
-      "cordova-plugin-googlemaps": {
-        "API_KEY_FOR_ANDROID": "YOUR_GOOGLE_MAPS_API_KEY",
-        "API_KEY_FOR_IOS": "YOUR_GOOGLE_MAPS_API_KEY"
+      "cordova-plugin-geolocation": {
+        "GPS_REQUIRED": "true"
       }
     }
   }

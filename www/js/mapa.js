@@ -18,6 +18,7 @@ function initMap() {
         .bindPopup('Você está aqui.')
         .openPopup();
     }, function(error) {
+      console.error("Erro ao obter localização: ", error);
       alert('Erro ao obter sua localização: ' + error.message);
     });
   } else {
